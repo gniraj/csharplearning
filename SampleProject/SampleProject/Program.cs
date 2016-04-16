@@ -11,7 +11,8 @@ namespace SampleProject
         static void Main(string[] args)
         {
             asyncawaits e = new asyncawaits();
-            e.entrypoint();
+            e.entrypoint1();
+            e.entrypoint2();
         }
     }
 }

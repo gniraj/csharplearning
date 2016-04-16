@@ -10,17 +10,22 @@ namespace SampleProject
 {
     class asyncawaits
     {
-        public void entrypoint()
+        public void entrypoint2()
+        {
+            
+        }
+
+        public void entrypoint1()
         {
             Console.WriteLine("here1");
-            string result = DownloadContent().Result;
+            string result = JustWait1().Result;
             Console.WriteLine("here1");
             Console.WriteLine(result);
             Console.WriteLine("here2");
             Console.Read();
         }
 
-        public async Task<string> DownloadContent()
+        public async Task<string> JustWait1()
         {
             using (HttpClient client = new HttpClient())
             {
